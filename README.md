@@ -1,7 +1,5 @@
 # Team Profiler
 
----
-
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## *Table of Contents*
@@ -23,33 +21,69 @@
 
 ## **Tools**
 
-  Javascript, Node, Inquirer@8.2.4, Jest
+  Javascript, Node, Inquirer@8.2.4, Jest@29.3.1
 
 ## **Motivation**
 
-  I wanted to test my skills in code testing. That way I can produce more effecient code that is less prone to breaking.
+  I wanted to test my skills in code testing. That way I can produce more efficient code that is less prone to breaking.
 
 ## **Installation**
   
-  UPDATE
+- Download zip
 
 ## **Usage**
 
-  UPDATE
+- Navigate to respective folder where files were downloaded
+
+- cd into folder
+
+``` en
+npm install 
+node index.js
+
+```
 
 ## **Contribution**
 
-  N/A
+  Contact me
+
+  Information below
   
 ## **Testing**
 
-  UPDATE
+- Navigate to <**tests**> folder and run the following commands:
+
+To test the Employee module:
+
+  ```en
+  npm test Employee.test.js
+  ```
+
+To test the Engineer module:
+
+```en
+npm test Engineer.test.js
+```
+
+To test the Intern module:
+
+  ```en
+  npm test Intern.test.js
+  ```
+
+To test the Manager module:
+
+  ```en
+  npm test Manager.test.js
+  ```
 
 ## **Screenshots**
 
-  Add your screenshots here:
-
-  ![ALT TEXT](URL)
+  ![screenshot](./assets/starting.png)
+  ![screenshot](./assets/selection.png)
+  ![screenshot](./assets/selection2.png)
+  ![screenshot](./assets/end.png)
+  ![screenshot](./assets/dashboard.png)
 
 ## **Links**
   
