@@ -40,7 +40,6 @@
 ``` en
 npm install 
 node index.js
-
 ```
 
 ## **Contribution**
