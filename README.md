@@ -1,6 +1,8 @@
 # Team Profiler
 
-![License](https://img.shields.io/badge/License-MIT-blue)
+<a href="https://choosealicense.com/licenses/mit/">
+<img src="https://img.shields.io/badge/License-MIT-blue" />
+</a>
 
 ## *Table of Contents*
 
@@ -86,9 +88,7 @@ To test the Manager module:
 
 ## **Links**
   
-  Add any relevant links for this project below:
-
-  [Your Website](URL)
+  [Repo](https://github.com/ValentaCodes/Team-Profiler)
 
 ## License
 
