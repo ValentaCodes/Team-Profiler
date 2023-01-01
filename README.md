@@ -44,6 +44,8 @@ npm install
 node index.js
 ```
 
+- After prompts are answered check the "**dist**" folder for your rendered HTML and CSS files
+
 ## **Contribution**
 
   Contact me
