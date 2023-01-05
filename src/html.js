@@ -1,4 +1,7 @@
+const Manager = require('../lib/Manager')
+
 const html = (answers) => {
+    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail)
   return `<!DOCTYPE html>
     <html lang="en">
 <head>
@@ -16,17 +19,17 @@ const html = (answers) => {
 </head>
 <body>
     <header>
-        My Team
+        <h1>My Team <h1/>
     </header>
     <div class=wrapper>
         <div class="card">
             <div class="person">            
-                <p>${answers.managerName}</p>
+                <p>${manager.getName()}</p>
                 <p>Manager</p>
             </div>
                 <div class="info">
-                    <p>ID: ${answers.managerId}</p>
-                    <a href="mailto:${answers.managerEmail}">Email</a>
+                    <p>ID: ${manager.getId()}</p>
+                    <a href="mailto:${manager.getEmail()}">Email</a>
                 </div>
         </div>`;
 };

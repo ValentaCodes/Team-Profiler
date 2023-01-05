@@ -1,13 +1,21 @@
+const Engineer = require("../lib/Engineer");
+
 const createEngineer = (answers) => {
+  const engineer = new Engineer(
+    answers.engineerName,
+    answers.engineerId,
+    answers.engineerEmail,
+    answers.github
+  );
   return `\n<div class="card">
         <div class="person">
-            <p>${answers.engineerName}</p>
+            <p>${engineer.getName()}</p>
             <p>Engineer</p>
         </div>
             <div class="info">
-                <p>ID: ${answers.engineerId}</p>
-                <a href="mailto:${answers.engineerEmail}">Email</a>
-                <a href="https://www.github.com/${answers.github}">Github</a>
+                <p>ID: ${engineer.getId()}</p>
+                <a href="mailto:${engineer.getEmail()}">Email</a>
+                <a href="${engineer.getGithub()}">Github</a>
             </div>
     </div>`;
 };
