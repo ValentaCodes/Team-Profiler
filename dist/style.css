@@ -6,11 +6,12 @@ html {
 }
 body {
   margin: 0;
-  background-image: linear-gradient(to right, #edede9 20%, #f5ebe0 80%);
   color: black;
+  background-image: radial-gradient(#d5bdaf, #f5ebe0 60%);
 }
+
 header {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +20,15 @@ header {
   padding: 5.5rem;
   border-bottom: 2px solid white;
   font-family: "Lobster Two", cursive;
+  animation: 4s ease-in-out 3s infinite alternate-reverse title;
+}
+@keyframes title {
+  from {
+    color: black;
+  }
+  to {
+    color: rgb(206, 128, 128);
+  }
 }
 .wrapper {
   display: flex;
@@ -34,12 +44,13 @@ header {
   background-color: #f5ebe0;
   font-size: 20px;
   color: white;
-  box-shadow: 10px 10px 10px grey;
-  border-radius: 12px;
+  box-shadow: 2px 3px 3px grey;
+  border-radius: 13px;
+  transition-duration: 1s;
 }
-
 .card:hover {
   transform: scale(1.1);
+  box-shadow: 10px 10px 10px rgb(196, 192, 192);
   transition: 1.5s;
 }
 
@@ -53,7 +64,8 @@ a:hover {
   background-color: #d5bdaf;
   color: white;
   border: 2px solid #f5ebe0;
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   text-align: center;
   text-transform: capitalize;
 }
